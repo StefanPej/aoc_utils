@@ -6,7 +6,7 @@ def read_input(year: str | int, day: str | int, strip: bool=True) -> "list[str]"
     return [line.strip() for line in ret] if strip else ret
 
 def transpose(my_list: list) -> list:
-    return list(zip(*list))
+    return list(zip(*my_list))
 
 def order_dict(my_dict: dict, reverse: bool=True) -> dict:
     return {k: v for k, v in sorted(my_dict.items(), key=lambda item: item[1], reverse=reverse)}
